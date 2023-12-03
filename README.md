@@ -1,5 +1,5 @@
-# pico-tone
-Generate tones using Raspberry Pi Pico :speaker::musical_score::notes:.
+# pico-tone :speaker::musical_score::notes:
+Generate tones using Raspberry Pi Pico.
 
 # Trying it out!
 Based on [Quick-start your own project](https://github.com/raspberrypi/pico-sdk/tree/master#quick-start-your-own-project)
