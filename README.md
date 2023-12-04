@@ -1,12 +1,8 @@
 # Noisy Ornament :speaker::christmas_tree::notes:
 Generate tones using Raspberry Pi Pico.
 
-If you want to compile this project, you need to use [this forked version](https://github.com/jcarranz97/pico-sdk) of
-pico-sdk. 
-
-I am currently in the process of making the changes need to include the tone
-library as part of the [`pico-extras`](https://github.com/raspberrypi/pico-extras) and
-[`pico-playground`](https://github.com/raspberrypi/pico-playground) repos.
+If you want to compile this project, you need to use [this forked version](https://github.com/jcarranz97/pico-extras) of
+`pico-extras` which includes the [`pico_tone`](https://github.com/jcarranz97/pico-extras/tree/master/src/rp2_common/pico_tone) library to generate tones.
 
 ## Trying it out!
 Based on [Quick-start your own project](https://github.com/raspberrypi/pico-sdk/tree/master#quick-start-your-own-project)
