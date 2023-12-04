@@ -17,6 +17,9 @@ int main() {
         // Stop playing to distinguish between melodies
         no_tone(BUZZER_PIN);
         sleep_ms(500);
-        play_la_cucaracha(BUZZER_PIN);
+        //play_la_cucaracha(BUZZER_PIN);
+        play_el_ninio_del_tambor(BUZZER_PIN);
+        no_tone(BUZZER_PIN);
+        sleep_ms(500);
   }
 }

@@ -173,3 +173,109 @@ void play_la_cucaracha(uint gpio){
         }
     }
 }
+
+void play_el_ninio_del_tambor(uint gpio) {
+    // Play el ninio del tambor song following its notes and durations
+    // 1
+    tone(gpio, NOTE_G4, get_note_duration_in_ms(3.f));
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(1.f));
+
+    // 2
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(2.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+
+    // 3 & 4
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(2.f + 3.f));
+		// <silence> 1
+
+		// 5
+		// <silence> 1
+    tone(gpio, NOTE_G4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_G4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(1.f));
+
+    // 6
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+		
+    //7 & 8
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(2.f + 3.f));
+
+    //9
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
+    
+    //10
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_E5, get_note_duration_in_ms(1.f));
+
+    //11 & 12
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(2.f+3.f));
+
+    // 13
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
+
+    // 14
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_E5, get_note_duration_in_ms(1.f));
+
+    // 15
+    tone(gpio, NOTE_F5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_E5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(2.f));
+
+    // 16
+    tone(gpio, NOTE_E5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(2.f));
+
+    // 17 & 18
+    tone(gpio, NOTE_D5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(2.f+3.F));
+
+    // 19
+    tone(gpio, NOTE_G4, get_note_duration_in_ms(2.f));
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(1.f));
+
+    // 20
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(1.f));
+
+    // 21 & 22
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_B4, get_note_duration_in_ms(2.f+3.f));
+
+    // 23 & 24
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_G4, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_A4, get_note_duration_in_ms(1.f));
+    tone(gpio, NOTE_G4, get_note_duration_in_ms(2.f+4.f));
+
+}
