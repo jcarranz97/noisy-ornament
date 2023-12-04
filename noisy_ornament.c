@@ -14,7 +14,9 @@ int main() {
     tone_init(BUZZER_PIN);
     while (1) {
         play_silent_night(BUZZER_PIN);
-        no_tone(500);  // 500ms silence
+        // Stop playing to distinguish between melodies
+        no_tone(BUZZER_PIN);
+        sleep_ms(500);
         play_la_cucaracha(BUZZER_PIN);
   }
 }
