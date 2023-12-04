@@ -4,8 +4,6 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-#include "pico/stdlib.h"
-#include "pico/tone.h"
 #include "melodies.h"
 
 #define BUZZER_PIN 3
@@ -16,5 +14,9 @@ int main() {
     tone_init(BUZZER_PIN);
     while (1) {
         play_silent_night(BUZZER_PIN);
+        // Stop playing to distinguish between melodies
+        no_tone(BUZZER_PIN);
+        sleep_ms(500);
+        play_la_cucaracha(BUZZER_PIN);
   }
 }

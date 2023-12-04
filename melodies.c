@@ -104,3 +104,72 @@ void play_silent_night(uint gpio) {
     // tone(gpio, <Silencio>, 2.f);
     // Fin
 }
+
+void play_la_cucaracha(uint gpio){
+    // Play la cucaracha song following its notes and durations
+    // 1
+    tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+    tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+
+    for (int i=0; i<2; i++) {
+        // 2
+        tone(gpio, NOTE_F4, get_note_duration_in_ms(1.5f));
+        tone(gpio, NOTE_A4, get_note_duration_in_ms(1.f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+
+        // 3
+        tone(gpio, NOTE_F4, get_note_duration_in_ms(1.5f));
+        tone(gpio, NOTE_A4, get_note_duration_in_ms(1.5f));
+
+        // 4
+        tone(gpio, NOTE_F4, get_note_duration_in_ms(1.f));
+        tone(gpio, NOTE_F4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_E4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_E4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_D4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_D4, get_note_duration_in_ms(.5f));
+
+        // 5
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(2.f));
+        //<Silencio> 2
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+
+        // 6
+        tone(gpio, NOTE_E4, get_note_duration_in_ms(1.5f));
+        tone(gpio, NOTE_G4, get_note_duration_in_ms(1.f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+
+        // 7
+        tone(gpio, NOTE_E4, get_note_duration_in_ms(1.5f));
+        tone(gpio, NOTE_G4, get_note_duration_in_ms(1.5f));
+
+        // 8
+        tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
+        tone(gpio, NOTE_D5, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_C5, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_B4B, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_A4, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_G4, get_note_duration_in_ms(.5f));
+
+        if (i == 0) {
+            // In the first iteration we finish in A4, and then repeat the song
+            // 9
+            tone(gpio, NOTE_A4, get_note_duration_in_ms(2.f));
+            tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+            tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+            tone(gpio, NOTE_C4, get_note_duration_in_ms(.5f));
+            //<Silencio> 2
+        } else {
+            // In the second iteration we finish in F4, and then finish the song
+            // 10
+            tone(gpio, NOTE_F4, get_note_duration_in_ms(2.f));
+        }
+    }
+}
