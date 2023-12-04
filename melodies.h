@@ -82,4 +82,10 @@ void play_silent_night(uint gpio);
  */
 void play_la_cucaracha(uint gpio);
 
+/*! \bried Play 'El ninio del tambor (rompomponpon)' on the given GPIO pin
+ *
+ * \param gpio The GPIO pin to play the melody on
+ */
+void play_el_ninio_del_tambor(uint gpio);
+
 #endif
