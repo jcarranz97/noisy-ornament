@@ -16,5 +16,6 @@ int main() {
     tone_init(BUZZER_PIN);
     while (1) {
         play_silent_night(BUZZER_PIN);
+        play_la_cucaracha(BUZZER_PIN);
   }
 }
