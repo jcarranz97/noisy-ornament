@@ -14,6 +14,7 @@ pico_sdk_init()
 
 # rest of your project
 add_executable(noisy_ornament
+    melodies.c
     noisy_ornament.c
 )
 
