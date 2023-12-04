@@ -8,7 +8,7 @@
 #define NOTE_F4 349
 #define NOTE_G4 392
 #define NOTE_A4 440
-#define NOTE_B4b 466
+#define NOTE_B4B 466
 #define NOTE_B4 494
 #define NOTE_C5 523
 #define NOTE_D5 587

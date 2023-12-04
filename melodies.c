@@ -154,7 +154,7 @@ void play_la_cucaracha(uint gpio){
         tone(gpio, NOTE_C5, get_note_duration_in_ms(1.f));
         tone(gpio, NOTE_D5, get_note_duration_in_ms(.5f));
         tone(gpio, NOTE_C5, get_note_duration_in_ms(.5f));
-        tone(gpio, NOTE_B4b, get_note_duration_in_ms(.5f));
+        tone(gpio, NOTE_B4B, get_note_duration_in_ms(.5f));
         tone(gpio, NOTE_A4, get_note_duration_in_ms(.5f));
         tone(gpio, NOTE_G4, get_note_duration_in_ms(.5f));
 
