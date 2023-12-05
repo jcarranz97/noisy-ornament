@@ -1,27 +1,48 @@
 # Noisy Ornament :speaker::christmas_tree::notes:
-Generate tones using Raspberry Pi Pico.
+Generate tones by using `tone` library in your [Raspberry Pi Pico](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico).
+
+The idea of this project is to use your [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) to generate christmas melodies
+so that you can put your board next to your christmas three and (Or as an Ornament) to
+have good memories from your childhood :christmas_tree:.
 
 If you want to compile this project, you need to use [this forked version](https://github.com/jcarranz97/pico-extras) of
-`pico-extras` which includes the [`pico_tone`](https://github.com/jcarranz97/pico-extras/tree/master/src/rp2_common/pico_tone) library to generate tones.
+[`pico-extras`](https://github.com/raspberrypi/pico-extras) which includes [`pico_tone`](https://github.com/jcarranz97/pico-extras/tree/master/src/rp2_common/pico_tone) library to generate tones.
+
+There is a [PR](https://github.com/raspberrypi/pico-extras/pull/70) open to include `pico_tone` by default in the `pico-extras` library.
+In the meantime, it is possible to use the forked version of it.
+
+[`pico_tone`](https://github.com/jcarranz97/pico-extras/tree/master/src/rp2_common/pico_tone) uses Pulse With Modulation (PWM)
+to generate tones, similar to [`tone()`](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/) from [Arduino](https://www.arduino.cc/).
 
 ## Trying it out!
-Based on [Quick-start your own project](https://github.com/raspberrypi/pico-sdk/tree/master#quick-start-your-own-project)
-instructions for Linux-based platforms.
+Follow the [Quick-start your own project](https://github.com/raspberrypi/pico-sdk/tree/master#quick-start-your-own-project) from [`pico-sdk`](https://github.com/raspberrypi/pico-sdk)
+to make sure your environment is setup correctly.
 
-1. Setup a CMake build direcory
+Below instructions are for Linux base platforms.
+
+1. Clone `pico-extras` and `noisy-ornament` repositories.
 ```
+$ git clone https://github.com/jcarranz97/pico-extras.git
+$ git clone https://github.com/jcarranz97/noisy-ornament.git
+```
+2. Create `PICO_EXTRAS_PATH` environment variable with the path where [`pico-extras`](https://github.com/raspberrypi/pico-extras) was cloned.
+```
+$ export PICO_EXTRAS_PATH=$(pwd)/pico-extras
+```
+3. Change directory to noisy-ornament and setup a CMake build directory.
+```
+$ cd noisy-ornament
 $ mkdir build
 $ cd build
 $ cmake ..
 ```
-
-2. Compile project
+4. Compile project.
 ```
-$ make -j4
+$ make -j(nproc)
 ```
-
-3. Connect your Raspberry Pi Pico to your PC with `BOOTSEL` button pressed.
-4. Copy `noisy_ornament.uf2` file to your board.
+5. Connect your Raspberry Pi Pico to your PC with `BOOTSEL` button pressed.
+6. Copy `noisy_ornament.uf2` file to your board.
 ```
-$ cp noisy_ornament.uf2 /media/juan/RPI-RP2
+$ cp noisy_ornament.uf2 <RPI-RP2 mount folder>
 ```
+In my case, my Raspberry Pi Pico is always mounted under `/media/juan/RPI-RP2`
