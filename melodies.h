@@ -17,8 +17,8 @@
  *
  */
 
+extern uint32_t note_duration_in_ms;
 // NOTE_DURATION is the speed of each note in ms
-#define NOTE_DURATION  400U  // Speed of each note in ms
 #define SILENCE_AFTER_NOTE  10U  // Speed of each note in ms
 
 
@@ -104,5 +104,17 @@ void play_el_ninio_del_tambor(uint gpio);
  * \param gpio The GPIO pin to play the melody on
  */
 void play_peces_en_el_rio(uint gpio);
+
+/*! \bried Play 'Mi burrito sabanero' on the given GPIO pin (Part1)
+ *
+ * \param gpio The GPIO pin to play the melody on
+ */
+void con_mi_burrito_sabanero(uint gpio);
+
+/*! \bried Play 'Mi burrito sabanero' on the given GPIO pin (Part2)
+ *
+ * \param gpio The GPIO pin to play the melody on
+ */
+void play_mi_burrito_sabanero(uint gpio);
 
 #endif
