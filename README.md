@@ -14,6 +14,11 @@ In the meantime, it is possible to use the forked version of it.
 [`pico_tone`](https://github.com/jcarranz97/pico-extras/tree/master/src/rp2_common/pico_tone) uses Pulse With Modulation (PWM)
 to generate tones, similar to [`tone()`](https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/) from [Arduino](https://www.arduino.cc/).
 
+## Included Melodies 
+1. [Noche de Paz](https://youtu.be/5daRCsbNbCY?si=0ynJ5DoZLcHSYWgX) :crescent_moon::christmas_tree: (_Silent Night_)
+2. [El Ninio del Tambor](https://youtu.be/wsMXWFXqSFE?si=DsfSel4m0bFxvVdt) :child::drum:: (_Rompomponpon_)
+3. [La Cucaracha](https://youtu.be/BZ3bY_j_11I?si=7EHdJrBd9Wp2K_e8) :cockroach::mexico:
+
 ## Trying it out!
 Follow the [Quick-start your own project](https://github.com/raspberrypi/pico-sdk/tree/master#quick-start-your-own-project) from [`pico-sdk`](https://github.com/raspberrypi/pico-sdk)
 to make sure your environment is setup correctly.
