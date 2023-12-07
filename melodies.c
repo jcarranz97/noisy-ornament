@@ -285,3 +285,186 @@ void play_el_ninio_del_tambor(uint gpio) {
     play_tone(gpio, NOTE_G4, 2.f+4.f);
 
 }
+
+
+void play_peces_en_el_rio(uint gpio) {
+    // Play los peces en el rio
+    for (int i=0; i<2; i++) {
+        // 1
+        play_tone(gpio, NOTE_B4B, 1.f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 2
+        play_tone(gpio, NOTE_B4B, 1.f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_G4, .5f);
+
+        // 3
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_G4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_F4S, .5f);
+
+        // 4
+        play_tone(gpio, NOTE_D4, 1.f);
+        sleep_ms(get_note_duration_in_ms(1.f));
+
+        // 5
+        play_tone(gpio, NOTE_C5, 1.f);
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_C5, .5f);
+
+        // 6
+        play_tone(gpio, NOTE_C5, 1.f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+
+        // 7
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+
+        // 8
+        play_tone(gpio, NOTE_G4, 1.f);
+        sleep_ms(get_note_duration_in_ms(1.f));
+
+        // 9
+        play_tone(gpio, NOTE_B4B, 1.f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 10
+        play_tone(gpio, NOTE_B4B, 1.f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_G4, .5f);
+
+        // 11
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_G4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_F4S, .5f);
+
+        // 12
+        play_tone(gpio, NOTE_D4, 1.f);
+        sleep_ms(get_note_duration_in_ms(1.f));
+
+        // 13
+        play_tone(gpio, NOTE_C5, 1.f);
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_C5, .5f);
+
+        // 14
+        play_tone(gpio, NOTE_C5, 1.f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+
+        // 15
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+
+        // 16
+        play_tone(gpio, NOTE_G4, 1.f);
+        sleep_ms(get_note_duration_in_ms(.5f));
+
+        // 17
+        play_tone(gpio, NOTE_G4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+
+        // 18
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+
+        // 19
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        sleep_ms(get_note_duration_in_ms(.5f));
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 20
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4, .5f);
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 21
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        sleep_ms(get_note_duration_in_ms(.5f));
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 22
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4, .5f);
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 23
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        sleep_ms(get_note_duration_in_ms(.5f));
+        play_tone(gpio, NOTE_G4, .5f);
+
+        // 24
+        play_tone(gpio, NOTE_F4S, .5f);
+        play_tone(gpio, NOTE_G4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 25
+        play_tone(gpio, NOTE_G4, .5f);
+        play_tone(gpio, NOTE_G4, .5f);
+        sleep_ms(get_note_duration_in_ms(1.f));
+
+        // 26
+        play_tone(gpio, NOTE_B4B, 1.f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+
+        // 27
+        play_tone(gpio, NOTE_B4B, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+        sleep_ms(get_note_duration_in_ms(.5f));
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 28
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4, .5f);
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 29
+        play_tone(gpio, NOTE_A4, 1.f);
+        sleep_ms(get_note_duration_in_ms(.5f));
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 30
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4, .5f);
+        play_tone(gpio, NOTE_C5, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 31
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        sleep_ms(get_note_duration_in_ms(.5f));
+        play_tone(gpio, NOTE_G4, .5f);
+
+        // 32
+        play_tone(gpio, NOTE_F4S, .5f);
+        play_tone(gpio, NOTE_G4, .5f);
+        play_tone(gpio, NOTE_A4, .5f);
+        play_tone(gpio, NOTE_B4B, .5f);
+
+        // 33
+        play_tone(gpio, NOTE_G4, .1f);
+        sleep_ms(get_note_duration_in_ms(1.f));
+    }
+}
