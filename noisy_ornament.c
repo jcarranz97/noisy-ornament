@@ -21,5 +21,8 @@ int main() {
         play_el_ninio_del_tambor(BUZZER_PIN);
         no_tone(BUZZER_PIN);
         sleep_ms(500);
+        play_peces_en_el_rio(BUZZER_PIN);
+        no_tone(BUZZER_PIN);
+        sleep_ms(500);
   }
 }

@@ -98,4 +98,11 @@ void play_la_cucaracha(uint gpio);
  */
 void play_el_ninio_del_tambor(uint gpio);
 
+
+/*! \bried Play 'Peces en el rio' on the given GPIO pin
+ *
+ * \param gpio The GPIO pin to play the melody on
+ */
+void play_peces_en_el_rio(uint gpio);
+
 #endif

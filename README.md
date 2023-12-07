@@ -16,8 +16,9 @@ to generate tones, similar to [`tone()`](https://www.arduino.cc/reference/en/lan
 
 ## Included Melodies 
 1. [Noche de Paz](https://youtu.be/5daRCsbNbCY?si=0ynJ5DoZLcHSYWgX) :crescent_moon::christmas_tree: (_Silent Night_)
-2. [El Ninio del Tambor](https://youtu.be/wsMXWFXqSFE?si=DsfSel4m0bFxvVdt) :child::drum:: (_Rompomponpon_)
+2. [El Ninio del Tambor](https://youtu.be/wsMXWFXqSFE?si=DsfSel4m0bFxvVdt) :child::drum: (_Rompomponpon_)
 3. [La Cucaracha](https://youtu.be/BZ3bY_j_11I?si=7EHdJrBd9Wp2K_e8) :cockroach::mexico:
+4. [Los Peces en el Rio](https://www.youtube.com/watch?v=tfMDXnsuJFg) :fish::fish:
 
 ## Trying it out!
 Follow the [Quick-start your own project](https://github.com/raspberrypi/pico-sdk/tree/master#quick-start-your-own-project) from [`pico-sdk`](https://github.com/raspberrypi/pico-sdk)

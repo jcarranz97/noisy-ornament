@@ -6,6 +6,7 @@
 #define NOTE_D4 294
 #define NOTE_E4 330
 #define NOTE_F4 349
+#define NOTE_F4S 370
 #define NOTE_G4 392
 #define NOTE_A4 440
 #define NOTE_B4B 466
