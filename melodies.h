@@ -19,6 +19,8 @@
 
 // NOTE_DURATION is the speed of each note in ms
 #define NOTE_DURATION  400U  // Speed of each note in ms
+#define SILENCE_AFTER_NOTE  10U  // Speed of each note in ms
+
 
 /*! \brief Convert a note duration to millisends
  *
@@ -30,6 +32,14 @@
  * \return The duration of the note in milliseconds
  */
 uint32_t get_note_duration_in_ms(float note_duration);
+
+/*! \brief play_tone with a small silence after the note to distinguish between notes
+ *
+ * \param gpio The GPIO pin to play the note on
+ * \param note The note to play
+ * \param note_duration The duration of the note in seconds
+ */
+void play_tone(uint gpio, uint32_t frequency, float duration);
 
 /*! \brief Play 'Silent Night' on the given GPIO pin
  *
