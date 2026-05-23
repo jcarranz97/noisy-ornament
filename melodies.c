@@ -5,8 +5,10 @@
  */
 #include "melodies.h"
 
+uint32_t note_duration_in_ms = 500;
+
 uint32_t get_note_duration_in_ms(float note_duration) {
-    return (uint32_t)(note_duration * NOTE_DURATION);
+    return (uint32_t)(note_duration * note_duration_in_ms);
 }
 
 void play_tone(uint gpio, uint32_t frequency, float duration) {
@@ -467,4 +469,171 @@ void play_peces_en_el_rio(uint gpio) {
         play_tone(gpio, NOTE_G4, .1f);
         sleep_ms(get_note_duration_in_ms(1.f));
     }
+}
+
+void con_mi_burrito_sabanero(uint gpio) {
+    for (int i=0; i<2; i++) {
+        for (int j=0; j<2; j++) {
+            // 1
+            sleep_ms(get_note_duration_in_ms(.5f));
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+
+            // 2
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+
+            // 3
+            play_tone(gpio, NOTE_C5, .5 + .25f);
+            play_tone(gpio, NOTE_C5, .5f);
+            play_tone(gpio, NOTE_C5, .5f);
+            play_tone(gpio, NOTE_C5, .5f);
+
+            // 4
+            play_tone(gpio, NOTE_A4, .5f);
+            play_tone(gpio, NOTE_A4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_A4, .5f);
+            play_tone(gpio, NOTE_B4, .5f);
+        }
+        for (int j=0; j<2; j++) {
+            // 5
+            sleep_ms(get_note_duration_in_ms(1.f));
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+
+            // 6
+            play_tone(gpio, NOTE_E4, 1.f);
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+
+            // 7
+            play_tone(gpio, NOTE_D4, 1.f);
+            play_tone(gpio, NOTE_B4, .5f);
+            play_tone(gpio, NOTE_B4, .5f);
+
+            // 8
+            play_tone(gpio, NOTE_A4, .5f);
+            play_tone(gpio, NOTE_A4, .5f);
+
+            // 9
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+            play_tone(gpio, NOTE_G4, .5f);
+        }
+    }
+}
+
+void play_mi_burrito_sabanero(uint gpio) {
+    // Play mi burrito sabanero
+    con_mi_burrito_sabanero(gpio);
+    /// Dunki dunki dunki dunki
+    // 10
+    sleep_ms(get_note_duration_in_ms(1.f));
+    sleep_ms(get_note_duration_in_ms(1.f));
+
+    // 11 & 12
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f + .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+
+    // 13
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+    sleep_ms(get_note_duration_in_ms(1.f));
+    
+    // 14
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f + .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+
+    // 15
+    play_tone(gpio, NOTE_G4, 1.f);
+    play_tone(gpio, NOTE_A4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+
+    // 16
+    play_tone(gpio, NOTE_A4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+
+    // 17
+    play_tone(gpio, NOTE_A4, 1.f);
+    play_tone(gpio, NOTE_A4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+
+    // 18
+    play_tone(gpio, NOTE_A4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_E4, .5f);
+
+    // 19
+    play_tone(gpio, NOTE_D4, 1.f);
+    sleep_ms(get_note_duration_in_ms(1.f));
+    
+    // 20
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f + .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+
+    // 21
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+    sleep_ms(get_note_duration_in_ms(1.f));
+
+    // 22
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f + .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+
+    // 23
+    play_tone(gpio, NOTE_G4, 1.f);
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+
+    // 24
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+
+    // 25
+    play_tone(gpio, NOTE_B4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+
+    // 26
+    play_tone(gpio, NOTE_D4, .5f);
+    play_tone(gpio, NOTE_B4, .5f);
+
+    // 27
+    play_tone(gpio, NOTE_A4, .5f);
+    play_tone(gpio, NOTE_G4, .5f);
+
+    // 28
+    play_tone(gpio, NOTE_G4, .5f);
+    play_tone(gpio, NOTE_A4, .5f);
+
+    // 29
+    play_tone(gpio, NOTE_G4, .5f);
+    sleep_ms(get_note_duration_in_ms(1.5f));
+
+    // 30
+    con_mi_burrito_sabanero(gpio);
 }
